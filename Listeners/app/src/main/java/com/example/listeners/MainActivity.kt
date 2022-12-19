@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun afterTextChanged(p0: Editable?) {
                 binding.textView.text = binding.editTextTextPersonName.text
-                if (binding.textView.text.length==0)
+                if (binding.textView.text.isEmpty())
                     binding.textView.text= "0"
             }
         })
